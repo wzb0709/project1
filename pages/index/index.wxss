@@ -1,0 +1,43 @@
+/**index.wxss**/
+/* 首页轮播开始 */
+.swiper{
+  height: 300rpx;
+  width: 700rpx;
+  margin: 0 auto;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+/* 首页轮播结束 */
+/* 首页详情开始 */
+.container{
+  padding-bottom: 25rpx;
+}
+.content{
+  padding: 25rpx 25rpx 0;
+}
+.content-title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.scroll-view{
+  width: 100%;
+  height: 327rpx;
+  white-space: nowrap
+}
+.scroll-image{
+  height: 280rpx;
+  display: inline-block;
+  background-color: #eeeeee;
+  margin-right: 25rpx;
+}
+.scroll-image-item{
+  height: 100%
+}
+.image-describe{
+  text-align: right;
+  font-size: 26rpx;
+
+}
+/* 首页详情结束 */

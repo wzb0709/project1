@@ -1,0 +1,48 @@
+/* 用户信息开始 */
+.user-info{
+  height: 200rpx;
+  width: 92%;
+  padding: 30rpx;
+  background: #eee;
+}
+.avatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.username-point{
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+}
+.username{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: white;
+}
+.point{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: white;
+}
+/* 用户信息结束 */
+
+/* 订单列表开始 */
+.navbar{
+  width: 690rpx;
+  padding: 30rpx 30rpx 0;
+}
+.nav-item{
+  font-size: 28rpx;
+  margin-right: 30rpx;
+  height: 60rpx;
+}
+.active{
+  border-bottom: 4rpx solid #000;
+  font-weight: bold;
+}
+
+.order-list{
+  padding: 30rpx;
+}
+/* 订单列表结束 */

@@ -1,0 +1,36 @@
+<view class='fl-r-noC'>
+  <!-- 左侧导航开始 -->
+  <view class='left-container'>
+    <view 
+      class='type-list' 
+      wx:for="{{type}}" 
+      wx:key="{{index}}"
+    >
+      <view 
+        class='type_item {{currentIndex === index ? "active" : "" }}'
+        data-index='{{index}}'
+        bindtap='handleClickType'
+      >
+        {{item.typeItem}}
+      </view>
+    </view>
+  </view>
+  <!-- 左侧导航结束 -->
+  <!-- 右侧导航开始 -->
+  <view class='right-container'>
+    <view
+      wx:for="{{imageList}}"
+      wx:key="{{index}}"
+      class="{{item.class}}"
+    >
+      <image 
+        src='{{item.url}}' 
+        class='auto-image'
+        bindload='imageLoad'
+        data-index='{{index}}'
+      >
+      </image>
+    </view>
+  </view>
+  <!-- 右侧导航结束 -->
+</view>

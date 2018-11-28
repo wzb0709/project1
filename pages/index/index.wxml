@@ -1,0 +1,43 @@
+<!--index.wxml-->
+
+<!-- 首页轮播开始 -->
+<swiper indicator-dots="{{indicatorDots}}" class='swiper' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 首页轮播结束 -->
+
+<!-- 首页详情开始 -->
+<view class='container'>
+  <view wx:for="{{content}}" class='content'>
+    <view class='fl-r-b common-margin-b'>
+      <view class='content-title'>{{item.title}}</view>
+      <view class='fl-r'>
+        <view class='second-text common-margin-r'>更多</view>
+        <image src='/images/right-arrow.png' class='icon-arrow'></image>
+      </view>
+    </view>
+    <scroll-view class='scroll-view' scroll-x>
+      <view 
+        class='scroll-image' 
+        wx:for="{{item.imageList}}"
+        wx:for-item="image"
+        wx:for-index="imgIndex"
+      >
+        <image 
+          class='scroll-image-item'
+          src="{{image.url}}"
+          style='width:{{image.width}}rpx'
+          bindload='bindImg'
+          data-index='{{index}}'
+          data-imgIndex='{{imgIndex}}'
+        >
+        </image>
+        <view class='image-describe'>{{image.describe}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

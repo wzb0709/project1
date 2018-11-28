@@ -1,0 +1,38 @@
+/**app.wxss**/
+.fl-r-b{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.fl-r{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fl-r-noC{
+  display: flex;
+  flex-direction: row;
+}
+.fl-c{
+  display: flex;
+  flex-direction: column;
+}
+.second-text{
+  font-size: 24rpx;
+  color: #848484;
+}
+.common-margin-b{
+  margin-bottom: 25rpx;
+}
+.common-margin-r{
+  margin-right: 15rpx;
+}
+.icon-arrow{
+  width: 24rpx;
+  height: 24rpx;
+}
+.auto-image{
+  width: 100%;
+  height: 100%;
+}

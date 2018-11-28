@@ -1,0 +1,42 @@
+<!-- 用户信息开始 -->
+<view class='user-info fl-r'>
+  <view class='avatar'>
+    <image 
+      class='auto-image'
+      src=''
+      style='border-radius:50%'
+      ></image>
+  </view>
+  <view class='username-point fl-c'>
+    <view class='username'>用户昵称</view>
+    <view class='point'>当前积分:2689</view>
+  </view>
+</view>
+<!-- 用户信息结束 -->
+<!-- 订单列表开始 -->
+<view class='navbar fl-r'>
+  <view 
+    wx:for="{{nav}}" 
+    wx:key="{{index}}" 
+    class='nav-item {{currentIndex === index ? "active" : "" }}'
+    data-index='{{index}}'
+    bindtap='handleNavItemClick'
+  >
+    {{item.navItem}}
+  </view>
+</view>
+
+<view class='order-list' wx:if="{{currentType === 'order'}}">
+  <view 
+    class='order-item' 
+    wx:for="{{orderList}}" 
+    wx:key="{{index}}"
+  >
+    <view class='area-title-price fl-r'>
+      <view class='area'>{{item.area}}</view>
+      <view class='title'>{{item.title}}</view>
+      <view class='price'>{{item.price}}</view>
+    </view>
+  </view>
+</view>
+<!-- 订单列表结束 -->
