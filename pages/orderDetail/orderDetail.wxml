@@ -1,0 +1,48 @@
+<!-- 订单详情 -->
+<!-- 大图展示开始 -->
+<view class='top-show'>
+  <view class='image'>
+    <image class='auto-image'></image>
+  </view>
+  <view class='title-price fl-r-b'>
+    <view class='title'>全家福其乐融融款</view>
+    <view class='price'>￥199</view>
+  </view>
+</view>
+<!-- 大图展示结束 -->
+
+<!-- 订单状态开始 -->
+<view class='order-detail'>
+  <view class='order-info fl-r'>
+    <text class='info-left' decode="{{true}}">预约区域：</text>
+    <text class='info-right'>宁波</text>
+  </view>
+  <view class='order-info'>
+    <text class='info-left' decode="{{true}}">预约时间：</text>
+    <text class='info-right'>2018-12-01 09:00~10"00</text>
+  </view>
+  <view class='order-info'>
+    <text class='info-left' decode="{{true}}">联&ensp;系&ensp;人：</text>
+    <text class='info-right'>张三</text>
+  </view>
+  <view class='order-info'>
+    <text class='info-left' decode="{{true}}">联系电话：</text>
+    <text class='info-right'>13812345678</text>
+  </view>
+  <view class='order-info'>
+    <text class='info-left' decode="{{true}}">备&emsp;&emsp;注：</text>
+    <text class='info-right'>希望摄影师好一点</text>
+  </view>
+  <view class='order-info'>
+    <text class='info-left' decode="{{true}}">当前状态：</text>
+    <text class='info-right'>待付预约金(￥69)</text>
+  </view>
+</view>
+<!-- 订单状态结束 -->
+
+<!-- 底部按钮开始 -->
+<view class='footer fl-r'>
+  <view class='footer-left'>电话咨询</view>
+  <view class='footer-right'>支付预约金</view>
+</view>
+<!-- 底部按钮结束 -->

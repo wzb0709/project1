@@ -1,0 +1,58 @@
+/* 大图展示开始 */
+.top-show{
+  position: relative;
+}
+.image{
+  margin: 0 30rpx;
+  width: 690rpx;
+  height: 300rpx;
+  background: #eee;
+  position: absolute;
+  z-index: 2
+}
+.title-price{
+  background-color: #ccc;
+  padding: 0 30rpx;
+  width: 690rpx;
+  height: 200rpx;
+  margin-top: -30rpx;
+  position: absolute;
+  top: 250rpx;
+  z-index: 1
+}
+.title-price view{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 70rpx;
+}
+/* 大图展示结束 */
+/* 订单状态开始 */
+.order-detail{
+  padding:450rpx 30rpx 0;
+}
+.order-info{
+  margin-bottom: 25rpx;
+}
+.order-info text{
+  font-size: 32rpx;
+}
+/* 订单状态结束 */
+/* 底部按钮开始 */
+.footer-left{
+  width: 40%;
+  height: 100%;
+  background:#fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100rpx;
+}
+.footer-right{
+  width: 60%;
+  height: 100%;
+  background: #eee;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100rpx;
+}
+/* 底部按钮结束 */

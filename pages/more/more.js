@@ -1,6 +1,6 @@
 // pages/more/more.js
 
-import {dealImage} from '../../common/common'
+import { dealImage } from '../../common/common'
 
 Page({
 
@@ -8,100 +8,104 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentIndex:0,
+    currentIndex: 0,
     type: [{
-      typeItem: "复古"
+      typeItem: "全家福系列"
     }, {
-      typeItem: "古典"
+      typeItem: "结婚照系列"
+    }, {
+      typeItem: "亲子照系列"
+    }, {
+      typeItem: "同学会系列"
     }],
 
     imageList: [{
-        url: 'https://cdn.haimati.cn/V3/Index/Product/more-jhdjz-v3.jpg',
-        class:''
-      },
-      {
-        url: 'https://cdn.haimati.cn/V3/Index/Product/more-qjf-v3.jpg',
-        class:'',
-      },
-      {
-        url: 'https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=02d5092c0755b31998f9857773a98286/562c11dfa9ec8a13ce3112cdfa03918fa0ecc0f0.jpg',
-        class:'',
-      }
+      url: 'https://cdn.haimati.cn/V3/Index/Product/more-jhdjz-v3.jpg',
+      class: ''
+    },
+    {
+      url: 'https://cdn.haimati.cn/V3/Index/Product/more-qjf-v3.jpg',
+      class: '',
+    },
+    {
+      url: 'https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=02d5092c0755b31998f9857773a98286/562c11dfa9ec8a13ce3112cdfa03918fa0ecc0f0.jpg',
+      class: '',
+    }
     ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   },
 
-  imageLoad:function(e){
+  imageLoad: function (e) {
     const flag = dealImage.CompareImgWidthAndHeight(e)
-    const {index} = e.target.dataset
-    const {imageList} = this.data
-    if(flag){
+    const { index } = e.target.dataset
+    const { imageList } = this.data
+    if (flag) {
       imageList[index].class = 'second-image'
-    }else{
+    } else {
       imageList[index].class = 'image'
     }
-    this.setData({imageList})
+    this.setData({ imageList })
   },
 
-  handleClickType:function(e){
-    const {index} = e.currentTarget.dataset
+  handleClickType: function (e) {
+    const { index } = e.currentTarget.dataset
     this.setData({
-      currentIndex:index
+      currentIndex: index
     })
   }
 })

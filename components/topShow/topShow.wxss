@@ -1,0 +1,40 @@
+/* 大图展示开始 */
+.top-show{
+  position: relative;
+}
+.image{
+  margin: 0 30rpx;
+  width: 690rpx;
+  height: 300rpx;
+  background: #eee;
+  position: absolute;
+  z-index: 2
+}
+.title-price{
+  background-color: #ccc;
+  padding: 0 30rpx;
+  width: 690rpx;
+  height: 200rpx;
+  margin-top: -30rpx;
+  position: absolute;
+  top: 250rpx;
+  z-index: 1
+}
+.title-price view{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 70rpx;
+}
+
+.auto-image{
+  width: 100%;
+  height: 100%;
+}
+
+.fl-r-b{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 大图展示结束 */

@@ -2,23 +2,24 @@
 
 .left-container{
   height: 1000rpx;
-  width: 180rpx;
-  border-right: 1rpx solid #ccc;
-  border-top: 1rpx solid #ccc;
+  width: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .type_item{
   width: 180rpx;
-  height:100rpx;
-  line-height: 100rpx;
+  height:80rpx;
+  line-height: 80rpx;
   text-align: center;
   font-size: 28rpx;
-  border-right: 1rpx solid #ccc;
-  border-bottom: 1rpx solid #ccc
+  margin: 10rpx;
+  border-bottom: 4rpx solid #fff
 }
 .active{
-  background-color: #02bae8;
-  color: white;
-  border-right: 0rpx solid #fff;
+  font-weight: bold;
+  border-bottom: 4rpx solid #000
 }
 /* 左侧导航结束 */
 /* 右侧展示开始 */
@@ -32,7 +33,7 @@
 .image{
   margin:30rpx 30rpx 0;
   background-color: #eee;
-  width: 510rpx;
+  width: 490rpx;
   height: 300rpx;
 }
 .second-image{

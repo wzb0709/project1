@@ -20,12 +20,12 @@
     wx:key="{{index}}" 
     class='nav-item {{currentIndex === index ? "active" : "" }}'
     data-index='{{index}}'
+    data-type='{{item.type}}'
     bindtap='handleNavItemClick'
   >
     {{item.navItem}}
   </view>
 </view>
-
 <view class='order-list' wx:if="{{currentType === 'order'}}">
   <view 
     class='order-item' 
@@ -37,6 +37,34 @@
       <view class='title'>{{item.title}}</view>
       <view class='price'>{{item.price}}</view>
     </view>
+    <view class='time-status fl-r-b'>
+      <view class='time'>预约时间: {{item.time}}</view>
+      <view class='status'>{{item.status}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='ticket-list' wx:if="{{currentType === 'ticket'}}">
+  <view 
+    class='ticket-item fl-r-b'
+    wx:for="{{ticketList}}"
+    wx:key="{{index}}"
+  >
+    <view class='ticket-price'>
+      <text>￥</text>
+      <text>{{item.price}}</text>
+    </view>
+    <view class='fl-c ticket-details'>
+      <view class='fl-r '>
+        <view class='title'>{{item.title}}</view>
+        <view class='status common-margin-l'>{{item.status}}</view>
+      </view>
+      <view class='time common-margin-t'>使用时间:{{item.time}}</view>
+    </view>
+    <image 
+      style='width:50rpx;height:50rpx' 
+      src='/images/right-arrow.png'
+    ></image>    
   </view>
 </view>
 <!-- 订单列表结束 -->

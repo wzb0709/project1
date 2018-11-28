@@ -43,6 +43,64 @@
 }
 
 .order-list{
-  padding: 30rpx;
+  padding: 0 30rpx;
+}
+.order-item{
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #eee
+}
+.area{
+  font-size: 26rpx;
+  padding: 0 20rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #dbdbdb;
+  color: white;
+}
+.title{
+  font-size: 32rpx;
+}
+.price{
+  font-size: 30rpx;
+  margin-left: 140rpx;
+}
+.time-status{
+  margin-top: 30rpx;
+}
+.time{
+  font-size: 26rpx;
+  color: #848484
+}
+.status{
+  font-size: 26rpx;
+  padding: 0 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #dbdbdb;
+  color: white;
+}
+
+.ticket-list{
+  padding: 0 30rpx;
+}
+.ticket-item{
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #eee
+}
+.ticket-price{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background: #eee;
+  text-align: center;
+  line-height: 150rpx;
+}
+.ticket-price text{
+  font-size:38rpx;
+  font-weight: bold;
+  color: white;
 }
 /* 订单列表结束 */

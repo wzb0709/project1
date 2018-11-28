@@ -1,0 +1,54 @@
+<!-- 大图展示开始 -->
+<topShow 
+  title='全家福其乐融融款'
+  price="￥199"
+>
+</topShow>
+<!-- 大图展示结束 -->
+<view style='padding-top:420rpx;'></view>
+<!-- 导航开始 -->
+<view class='navbar fl-r'>
+  <view 
+    wx:for="{{nav}}" 
+    wx:key="{{index}}" 
+    class='nav-item {{currentIndex === index ? "active" : "" }}'
+    data-index='{{index}}'
+    data-type='{{item.type}}'
+    bindtap='handleNavItemClick'
+  >
+    {{item.navItem}}
+  </view>
+</view>
+<!-- 导航结束 -->
+
+<!-- 内容展示开始 -->
+<swiper 
+  class='content'
+  bindchange='handleSwiperChange'
+  current='{{currentIndex}}'
+>
+  <swiper-item>
+    <view class='show-image'>
+      <image class='auto-image'></image>
+    </view>
+    <view class='article'>{{article}}</view>
+  </swiper-item>
+   <swiper-item>
+    <view class='show-image'>
+      <image class='auto-image'></image>
+    </view>
+    <view class='article'>{{article}}</view>
+  </swiper-item>
+   <swiper-item>
+    <view class='show-image'>
+      <image class='auto-image'></image>
+    </view>
+    <view class='article'>{{article}}</view>
+  </swiper-item>
+</swiper>
+<!-- 内容展示结束 -->
+<!-- 底部按钮开始 -->
+<view class='footer'>
+  
+</view>
+<!-- 底部按钮结束 -->

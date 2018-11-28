@@ -1,0 +1,10 @@
+<!-- 大图展示 -->
+<view class='top-show'>
+  <view class='image'>
+    <image class='auto-image'></image>
+  </view>
+  <view class='title-price fl-r-b'>
+    <view class='title'>{{title}}</view>
+    <view class='price'>{{price}}</view>
+  </view>
+</view>

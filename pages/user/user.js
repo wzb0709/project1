@@ -9,15 +9,69 @@ Page({
     currentType:"order",
     nav:[{
       navItem:"我的订单",
+      type:"order"
     },{
-      navItem:"我的优惠券"
+      navItem:"我的优惠券",
+      type:"ticket"
     }],
+    orderList:[
+      {
+        area:"宁波",
+        title:"全家福系列-其乐融融款",
+        price:"￥199",
+        time:"2018-12-01 09:00~10:00",
+        status:'待付预约金'
+      },
+      {
+        area: "宁波",
+        title: "全家福系列-其乐融融款",
+        price: "￥199",
+        time: "2018-12-01 09:00~10:00",
+        status: '已付预约金,待确认'
+      },
+      {
+        area: "宁波",
+        title: "全家福系列-其乐融融款",
+        price: "￥199",
+        time: "2018-12-01 09:00~10:00",
+        status: '已确认,等待拍摄'
+      },
+      {
+        area: "宁波",
+        title: "全家福系列-其乐融融款",
+        price: "￥199",
+        time: "2018-12-01 09:00~10:00",
+        status: '拍摄完成,待付尾款'
+      },
+      {
+        area: "宁波",
+        title: "全家福系列-其乐融融款",
+        price: "￥199",
+        time: "2018-12-01 09:00~10:00",
+        status: '已取消'
+      },
+    ],
 
-    orderList:[{
-      area:"宁波",
-      title:"全家福系列-其乐融融款",
-      price:"￥199"
-    }]
+    ticketList:[
+      {
+        price:'300',
+        title:'双12优惠券',
+        status:"未使用",
+        time:"2018/11/25~2019/01/31"
+      },
+      {
+        price: '300',
+        title: '双12优惠券',
+        status: "已使用",
+        time: "2018/11/25~2019/01/31"
+      },
+      {
+        price: '300',
+        title: '双12优惠券',
+        status: "已失效",
+        time: "2018/11/25~2019/01/31"
+      },
+    ]
   },
 
   /**
@@ -77,9 +131,10 @@ Page({
   },
 
   handleNavItemClick:function(e){
-    const {index} = e.currentTarget.dataset
+    const {index,type} = e.currentTarget.dataset
     this.setData({
-      currentIndex:index
+      currentIndex:index,
+      currentType:type
     })
   }
 })
