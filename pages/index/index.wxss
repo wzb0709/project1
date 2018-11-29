@@ -30,7 +30,7 @@
   height: 280rpx;
   display: inline-block;
   background-color: #eeeeee;
-  margin-right: 25rpx;
+  margin-right: 2rpx;
 }
 .scroll-image-item{
   height: 100%

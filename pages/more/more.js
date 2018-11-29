@@ -30,7 +30,15 @@ Page({
     {
       url: 'https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=02d5092c0755b31998f9857773a98286/562c11dfa9ec8a13ce3112cdfa03918fa0ecc0f0.jpg',
       class: '',
-    }
+    },
+    {
+      url: 'https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=02d5092c0755b31998f9857773a98286/562c11dfa9ec8a13ce3112cdfa03918fa0ecc0f0.jpg',
+      class: '',
+    },
+    {
+      url: 'https://cdn.haimati.cn/V3/Index/Product/more-qjf-v3.jpg',
+      class: '',
+    },
     ]
   },
 

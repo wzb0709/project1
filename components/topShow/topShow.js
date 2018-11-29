@@ -1,4 +1,6 @@
 // components/topShow/topShow.js
+import {dealImage} from '../../common/common'
+
 Component({
   /**
    * 组件的属性列表
@@ -11,6 +13,10 @@ Component({
     price:{
       type:String,
       vaule:"￥199"
+    },
+    url:{
+      type:String,
+      vaule:""
     }
   },
 
@@ -25,6 +31,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    handleImg:function(e){
+      let height = dealImage.ImgWidthFix(e,690)
+      console.log(height)
+      this.setData({
+        height
+      })
+    }
   }
 })

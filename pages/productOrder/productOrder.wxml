@@ -2,11 +2,10 @@
 <topShow 
   title='全家福其乐融融款'
   price="￥199"
+  url="https://cdn.haimati.cn/V3/Index/Product/more-jhdjz-v3.jpg"
 >
 </topShow>
 <!-- 大图展示结束 -->
-<view style='padding-top:420rpx;'></view>
-
 <!-- 预约表单开始 -->
 <view class='order-form fl-c'>
   <view class='form-item fl-r'>

@@ -5,8 +5,7 @@
 .image{
   margin: 0 30rpx;
   width: 690rpx;
-  height: 300rpx;
-  background: #eee;
+  /* background: #eee; */
   position: absolute;
   z-index: 2
 }
@@ -17,7 +16,7 @@
   height: 200rpx;
   margin-top: -30rpx;
   position: absolute;
-  top: 250rpx;
+  bottom:0;
   z-index: 1
 }
 .title-price view{

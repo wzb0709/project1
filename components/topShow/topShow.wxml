@@ -1,7 +1,7 @@
 <!-- 大图展示 -->
-<view class='top-show'>
-  <view class='image'>
-    <image class='auto-image'></image>
+<view class='top-show' style='height:{{height+110}}rpx'>
+  <view class='image' style='height:{{height}}rpx'>
+    <image class='auto-image' bindload='handleImg' src='{{url}}'></image>
   </view>
   <view class='title-price fl-r-b'>
     <view class='title'>{{title}}</view>

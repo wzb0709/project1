@@ -9,6 +9,12 @@ export const dealImage = {
     const ViewWidth = ViewHeight * ratio
     return ViewWidth
   },
+  ImgWidthFix:(e,ViewWidth)=>{
+    const { height, width } = e.detail
+    const ratio = width / height
+    const ViewHeight = ViewWidth / ratio
+    return ViewHeight
+  },
   CompareImgWidthAndHeight:(e) => {
     const { height, width } = e.detail
     if(height >= width) return true
