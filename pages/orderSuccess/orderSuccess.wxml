@@ -1,0 +1,22 @@
+<!-- 预定成功大ICON开始 -->
+<view class='success'>
+  <image class='auto-image' src='/images/success.png'></image>
+</view>
+<!-- 预定成功大ICON结束 -->
+<!-- 订单信息开始 -->
+<view class='title'>全家福系列-其乐融融款</view>
+<view class='info fl-r'>
+  <view class='label'>预约区域：</view>
+  <view class='content'>宁波</view>
+</view>
+<view class='info fl-r'>
+  <view class='label'>预约时间：</view>
+  <view class='content'>2018-12-01 09:00~10:00</view>
+</view>
+<view class='tip'>*预约金支付成功,才代表预约生效</view>
+<!-- 订单信息结束 -->
+<!-- 订单操作按钮开始 -->
+<button type='primary' class='button' bindtap='handlePay'>支付预约金</button>
+<button class='button' bindtap='handleGoUser'>会员中心</button>
+<!-- 订单操作按钮结束 -->
+

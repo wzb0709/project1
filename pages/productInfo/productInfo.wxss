@@ -37,3 +37,32 @@ page{
   text-align: center;
 }
 /* 内容展示结束 */
+/* 底部按钮开始 */
+.home,.share{
+  width: 15%;
+  font-size: 28rpx;
+  text-align: center;
+  height: 100%;
+  line-height: 100rpx;
+  border-right: 1rpx solid #ccc;
+  font-weight: bold;
+  color: #848484;
+}
+.order{
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  background: #eee;
+  justify-content: center;
+}
+.order view:nth-child(1){
+  font-size: 36rpx;
+  color: white;
+  font-weight: bold
+}
+.order view:nth-child(2){
+  font-size: 24rpx;
+  color: white;
+}
+/* 底部按钮结束 */

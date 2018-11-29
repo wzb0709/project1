@@ -31,6 +31,7 @@
     class='order-item' 
     wx:for="{{orderList}}" 
     wx:key="{{index}}"
+    bindtap='handleGoOrderDetail'
   >
     <view class='area-title-price fl-r'>
       <view class='area'>{{item.area}}</view>

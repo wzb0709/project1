@@ -1,4 +1,6 @@
 // pages/productInfo/productInfo.js
+import {navigate} from '../../common/common'
+
 Page({
 
   /**
@@ -89,5 +91,15 @@ Page({
     this.setData({
       currentIndex:current
     })
+  },
+
+  handleGoHome:function(e){
+    navigate.switch('index')
+  },
+  handleGoShare:function(e){
+
+  },
+  handleGoOrder:function(e){
+    navigate.Go('productOrder')
   }
 })

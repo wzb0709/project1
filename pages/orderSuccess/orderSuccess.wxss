@@ -1,0 +1,38 @@
+/* 预约成功图标开始 */
+.success{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 50rpx auto;
+}
+/* 预约成功图标结束 */
+/* ‘订单信息开始 */
+.title{
+  margin:  20rpx 0;
+  padding-left:150rpx; 
+  font-size: 34rpx;
+}
+.info{
+  padding-left: 150rpx;
+  margin-bottom: 20rpx;
+}
+.label{
+  font-size: 28rpx;
+}
+.content{
+  font-size: 28rpx;
+  margin-left: 15rpx;
+}
+.tip{
+  font-size: 28rpx;
+  color: #888888;
+  padding-left: 150rpx;
+  margin-bottom: 100rpx;
+}
+/* 订单信息结束 */
+/* 订单操作按钮开始 */
+.button{
+  width: 500rpx;
+  margin: 30rpx auto;
+}
+/* 订单操作按钮结束 */

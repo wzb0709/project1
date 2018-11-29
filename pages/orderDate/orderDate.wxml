@@ -1,0 +1,82 @@
+<!-- 日历展示开始 -->
+<view class='wrap'>
+  <view>
+    <view class='date-show'>
+      <view class='lt-arrow' bindtap='lastMonth'>
+        <image src='/images/right-arrow.png' mode='aspectFit'></image>
+      </view>
+      {{toastDate[currentIndex].year}}年{{toastDate[currentIndex].month}}月
+      <view class='rt-arrow' bindtap='nextMonth'>
+        <image src='/images/right-arrow.png' mode='aspectFit'></image>
+      </view>
+    </view>
+  </view>
+  <view class='header'>
+    <view wx:for='{{date}}'>{{item}}
+      <view></view>
+    </view>
+  </view>
+  <swiper 
+    style='height:540rpx;padding:0 24rpx;width:94%'     
+    bindchange='handleCalendarChange'
+    current="{{currentIndex}}"
+  >
+    <swiper-item wx:for="{{toastDate}}" wx:key="{{index}}">
+      <view class='date-box'>
+        <view 
+          wx:for='{{item.dateArr}}'
+          wx:for-item='date'
+          class='{{isToday == date.isToday ? "nowDay" : ""}}'
+          data-date='{{date.isToday}}'
+          data-today='{{date.today}}'
+          bindtap='handleDateClick'
+        >
+          <view class='date-head'>
+            <view 
+              class='{{today > date.today ? "dis" :""}}'
+            >
+              {{date.dateNum}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+</view>
+<!-- 日历展示结束 -->
+<!-- 预约时间选择开始 -->
+<view class='choose'>
+  <view class='tip'>*灰色代表已预约满</view>
+  <view class='time fl-r-b'>
+    <view 
+      data-index='0' 
+      class='{{currentTime === "0" ? "choosed" : ""}}'
+      bindtap='handleTimeChoose'
+    >09:00~10:00</view>
+    <view 
+      data-index='1'
+      class='{{currentTime === "1" ? "choosed" : ""}}
+      bindtap='handleTimeChoose'
+    >11:00~12:00</view>
+    </view>
+  <view class='time fl-r-b'>
+    <view 
+      data-index='2' 
+      class='{{currentTime === "2" ? "choosed" : ""}}
+      bindtap='handleTimeChoose'
+    >13:00~14:00</view>
+    <view 
+      data-index='3' 
+      class='{{currentTime === "3" ? "choosed" : ""}}
+      bindtap='handleTimeChoose'
+    >15:00~16:00</view>
+  </view>
+</view>
+<!-- 预约时间选择结束 -->
+<!-- 底部按钮开始 -->
+<view class='footer fl-r'>
+  <view class='footer-left'>电话咨询</view>
+  <view class='footer-right'>确认</view>
+</view>
+<!-- 底部按钮结束 -->

@@ -50,3 +50,22 @@
   box-shadow:0rpx -1rpx 3rpx #E0E0E0;
   background: #fff
 }
+.footer-left{
+  width: 40%;
+  height: 100%;
+  background:#fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 32rpx;
+}
+.footer-right{
+  width: 60%;
+  height: 100%;
+  background: #eee;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 32rpx;
+}

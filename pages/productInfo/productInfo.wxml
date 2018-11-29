@@ -48,7 +48,12 @@
 </swiper>
 <!-- 内容展示结束 -->
 <!-- 底部按钮开始 -->
-<view class='footer'>
-  
+<view class='footer fl-r'>
+  <view class='home' bindtap='handleGoHome'>首页</view>
+  <view class='share' bindtap='handleGoShare'>分享</view>
+  <view class='order fl-c' bindtap='handleGoOrder'>
+    <view>立即预约</view>
+    <view>预约金:￥69</view>
+  </view>
 </view>
 <!-- 底部按钮结束 -->

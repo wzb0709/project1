@@ -38,21 +38,5 @@
 }
 /* 订单状态结束 */
 /* 底部按钮开始 */
-.footer-left{
-  width: 40%;
-  height: 100%;
-  background:#fff;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100rpx;
-}
-.footer-right{
-  width: 60%;
-  height: 100%;
-  background: #eee;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100rpx;
-}
+
 /* 底部按钮结束 */

@@ -1,6 +1,6 @@
 // pages/more/more.js
 
-import { dealImage } from '../../common/common'
+import { dealImage, navigate} from '../../common/common'
 
 Page({
 
@@ -107,5 +107,9 @@ Page({
     this.setData({
       currentIndex: index
     })
+  },
+
+  handleNavigate:function(e){
+    navigate.Go('productInfo')
   }
 })

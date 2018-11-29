@@ -1,4 +1,6 @@
 // pages/user/user.js
+import { navigate } from '../../common/common'
+
 Page({
 
   /**
@@ -136,5 +138,9 @@ Page({
       currentIndex:index,
       currentType:type
     })
+  },
+
+  handleGoOrderDetail:function(e){
+    navigate.Go('orderDetail')
   }
 })

@@ -1,10 +1,13 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/orderDate/orderDate",
+    "pages/orderSuccess/orderSuccess",
+    "pages/productOrder/productOrder",
+    "pages/orderDetail/orderDetail",
     "pages/productInfo/productInfo",
     "pages/more/more",
-    "pages/orderDetail/orderDetail",
     "pages/user/user",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {

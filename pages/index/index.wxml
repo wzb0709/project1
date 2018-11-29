@@ -16,8 +16,8 @@
     <view class='fl-r-b common-margin-b'>
       <view class='content-title'>{{item.title}}</view>
       <view class='fl-r'>
-        <view class='second-text common-margin-r'>更多</view>
-        <image src='/images/right-arrow.png' class='icon-arrow'></image>
+        <!-- <view class='second-text common-margin-r'>更多</view> -->
+        <!-- <image src='/images/right-arrow.png' class='icon-arrow'></image> -->
       </view>
     </view>
     <scroll-view class='scroll-view' scroll-x>
@@ -36,7 +36,7 @@
           data-imgIndex='{{imgIndex}}'
         >
         </image>
-        <view class='image-describe'>{{image.describe}}</view>
+        <!-- <view class='image-describe'>{{image.describe}}</view> -->
       </view>
     </scroll-view>
   </view>
